@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors Game</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">WELCOME TO ROCK-PAPER-SCISSORS</h1>
+        <div class="container d-flex justify-content-center align-items-center p-5 m-5">
+            <!-- Card 1: Rock -->
+            <div  id="rock" class="card me-5 shadow choice" data-aos="flip-up"data-aos-duration="1000"
+            data-aos-easing="ease-in-out" style="width: 18rem; height: 22rem;">
+                <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTEyL2pvYjk1OS1lbGVtZW50LWItMDEzNl8yLmpwZw.jpg" class="card-img-top" alt="Rock" style="width: 100%; height: 20rem; object-fit: cover;">
+                <div class="card-body">
+                  <p class="card-text text-center">ROCK</p>
+                </div>
+            </div>
+            <!-- Card 2: Paper -->
+            <div  id="paper" class="card me-5 shadow choice" data-aos="flip-up"data-aos-duration="1000"
+            data-aos-easing="ease-in-out" style="width: 18rem; height: 22rem;">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210705223645/paper.jpeg" class="card-img-top" alt="Paper" style="width: 100%; height: 20rem; object-fit: cover;">
+                <div class="card-body">
+                  <p class="card-text text-center">PAPER</p>
+                </div>
+            </div>
+            <!-- Card 3: Scissors -->
+            <div  id="scissors" class="card me-5 shadow choice" data-aos="flip-up"data-aos-duration="1000"
+            data-aos-easing="ease-in-out" style="width: 18rem; height: 22rem;">
+                <img src="https://www.seekpng.com/png/detail/111-1114370_rock-paper-scissors-rock-paper-scissors-clipart.png" class="card-img-top" alt="Scissors" style="width: 100%; height: 20rem; object-fit: cover;">
+                <div class="card-body">
+                  <p class="card-text text-center">SCISSORS</p>
+                </div>
+            </div>
+        </div>
+        <!-- Result  -->
+        <div id="resultDisplay" class="result  text-center mt-5">
+           
+        </div>
+    </div>
+
+   
+</body>
+ <!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <!-- aos -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init();
+ </script>
+ <!-- Custom JS -->
+ <script src="./script.js"></script>
+</html>
